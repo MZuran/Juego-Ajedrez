@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  image-rendering: pixelated;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  overflow-x: hidden;
+}
+
+h1 {
+  margin: 10px;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.divv {
+  display: flex;
+}
+
+li {
+  list-style: none;
+  display: grid;
+  place-items: center;
+  font-size: 0px;
+}
+
+#tog {
+  margin: 10px 0px;
+}
+
+.allimg {
+  width: 45px;
+  position: relative;
+  bottom: 5px;
+}
+
+.allpawn {
+  transform: scale(0.7);
+}
+
+.authcont {
+  width: 100vw;
+}
+
+.author {
+  float: right;
+  margin-right: 50px;
+}
+
+@media (max-width: 650px) {
+  #tog {
+    margin-bottom: 70px;
+  }
+
+  .box {
+    width: 11vw;
+    height: 11vw;
+  }
+
+  .allimg {
+    width: 7vw;
+  }
+}
+
+.box {
+  margin: 0px;
+  width: 75px;
+  height: 75px;
+
+  position: relative;
+}
+
+.tile {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+}
+
+.piece {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  z-index: 2;
+}
+
+.obstacle {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  pointer-events: none; /* disable mouse events */
+  z-index: 1;
+}
+
+.dark-tile {
+  background-image: url('../images/dark_tile.png');
+}
+
+.bright-tile {
+  background-image: url(../images/bright_tile.png);
+}
+
+.orange-tile {
+  background-image: url(../images/orange_tile.png);
+}
+
+.green-tile {
+  background-image: url(../images/green_tile.png);
+}
+
+.wall-tile {
+  background-image: url(../images/wall_tile.png);
+}
+
+.moat {
+  background-image: url(../images/moat_tile.png);
+}
+
+.white-pawn {
+  background-image: url(../images/pawn_white.png);
+}
+
+.black-pawn {
+  background-image: url(../images/pawn_black.png);
+}
+
+.white-rook {
+  background-image: url(../images/rook_white.png);
+}
+
+.black-rook {
+  background-image: url(../images/rook_black.png);
+}
+
+.black-bishop {
+  background-image: url(../images/bishop_black.png);
+}
+
+.white-bishop {
+  background-image: url(../images/bishop_white.png);
+}
+
+.black-queen {
+  background-image: url(../images/queen_black.png);
+}
+
+.white-queen {
+  background-image: url(../images/queen_white.png);
+}
+
+.black-knight {
+  background-image: url(../images/knight_black.png);
+}
+
+.white-knight {
+  background-image: url(../images/knight_white.png);
+}
+
+.black-king {
+  background-image: url(../images/king_black.png);
+}
+
+.white-king {
+  background-image: url(../images/king_white.png);
+}
