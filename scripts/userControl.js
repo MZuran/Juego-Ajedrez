@@ -1,5 +1,5 @@
 /* ----------------------------------------------------------------------------------------------------------------------------------*/
-var boardSize = elongatedBoard(0, 0)
+var boardSize = elongatedBoardRandomizer(0, 0)
 
 var rowNumber = boardSize[0]
 var columnNumber = boardSize[1]

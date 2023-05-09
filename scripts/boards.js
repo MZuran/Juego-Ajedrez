@@ -120,7 +120,7 @@ function elongatedBoardRandomizer(size, size2) {
   spawnByCoordinates(scrambledArray[4] + size2, 1, 12)
 
   tiles = document.querySelectorAll('.tile')
-  addAllTheEventListenersToTiles()
+  addAllTheEventListenersToTiles(tiles)
   return [rowNumber, columnNumber]
 }
 
